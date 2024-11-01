@@ -1,0 +1,41 @@
+.top_but {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: url('../images/up.png') no-repeat center center;
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.3);
+
+}
+.top_but:hover {
+    cursor: pointer;
+    opacity: .95;
+}
+.top_but--blue {
+    background-color: #015a80;
+}
+.top_but--red {
+    background-color: #800101;
+}
+.top_but--green {
+    background-color: #098001;
+}
+.top_but--pure {
+    background-color: #5b0180;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .top_but {
+        left: 50%;
+        top: 60px;
+        width: 35px;
+        height: 35px;
+        margin-left: -17px;
+        background-image: url('../images/up_small.png');
+        box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
+    }
+}
